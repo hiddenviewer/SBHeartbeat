@@ -3,7 +3,7 @@ SBHeartbeat
 
 Heart Beat indicatorView for iOS
 
-![Demo SBHeartbeat](https://raw.github.com/hiddenviewer/SBHeartbeat/master/SBHeartbeat/Images.xcassets/sbheartbeat_preview.gif =320x570)
+![Demo SBHeartbeat](https://raw.github.com/hiddenviewer/SBHeartbeat/master/SBHeartbeat/Images.xcassets/sbheartbeat_preview.gif)
 
 ## Todo
 * add license
