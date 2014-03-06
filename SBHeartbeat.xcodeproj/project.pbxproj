@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D032957D18C8291A00905DFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D032957C18C8291A00905DFC /* Foundation.framework */; };
+		D032957F18C8291A00905DFC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D032957E18C8291A00905DFC /* CoreGraphics.framework */; };
+		D032958118C8291A00905DFC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D032958018C8291A00905DFC /* UIKit.framework */; };
+		D032958718C8291A00905DFC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D032958518C8291A00905DFC /* InfoPlist.strings */; };
+		D032958918C8291A00905DFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D032958818C8291A00905DFC /* main.m */; };
+		D032958D18C8291A00905DFC /* SBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D032958C18C8291A00905DFC /* SBAppDelegate.m */; };
+		D032959018C8291A00905DFC /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D032958E18C8291A00905DFC /* Main_iPhone.storyboard */; };
+		D032959318C8291A00905DFC /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D032959118C8291A00905DFC /* Main_iPad.storyboard */; };
+		D032959618C8291A00905DFC /* SBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D032959518C8291A00905DFC /* SBViewController.m */; };
+		D032959818C8291A00905DFC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D032959718C8291A00905DFC /* Images.xcassets */; };
+		D032959F18C8291A00905DFC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D032959E18C8291A00905DFC /* XCTest.framework */; };
+		D03295A018C8291A00905DFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D032957C18C8291A00905DFC /* Foundation.framework */; };
+		D03295A118C8291A00905DFC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D032958018C8291A00905DFC /* UIKit.framework */; };
+		D03295A918C8291A00905DFC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D03295A718C8291A00905DFC /* InfoPlist.strings */; };
+		D03295AB18C8291A00905DFC /* SBHeartbeatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D03295AA18C8291A00905DFC /* SBHeartbeatTests.m */; };
+		D03295B718C82A6900905DFC /* UIView+SBHeartbeat.m in Sources */ = {isa = PBXBuildFile; fileRef = D03295B618C82A6900905DFC /* UIView+SBHeartbeat.m */; };
+		D03295B918C82A8400905DFC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03295B818C82A8400905DFC /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D03295A218C8291A00905DFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D032957118C8291900905DFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D032957818C8291A00905DFC;
+			remoteInfo = SBHeartbeat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D032957918C8291A00905DFC /* SBHeartbeat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SBHeartbeat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D032957C18C8291A00905DFC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D032957E18C8291A00905DFC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D032958018C8291A00905DFC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D032958418C8291A00905DFC /* SBHeartbeat-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SBHeartbeat-Info.plist"; sourceTree = "<group>"; };
+		D032958618C8291A00905DFC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D032958818C8291A00905DFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D032958A18C8291A00905DFC /* SBHeartbeat-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SBHeartbeat-Prefix.pch"; sourceTree = "<group>"; };
+		D032958B18C8291A00905DFC /* SBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBAppDelegate.h; sourceTree = "<group>"; };
+		D032958C18C8291A00905DFC /* SBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBAppDelegate.m; sourceTree = "<group>"; };
+		D032958F18C8291A00905DFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		D032959218C8291A00905DFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		D032959418C8291A00905DFC /* SBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBViewController.h; sourceTree = "<group>"; };
+		D032959518C8291A00905DFC /* SBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBViewController.m; sourceTree = "<group>"; };
+		D032959718C8291A00905DFC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D032959D18C8291A00905DFC /* SBHeartbeatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SBHeartbeatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D032959E18C8291A00905DFC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D03295A618C8291A00905DFC /* SBHeartbeatTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SBHeartbeatTests-Info.plist"; sourceTree = "<group>"; };
+		D03295A818C8291A00905DFC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D03295AA18C8291A00905DFC /* SBHeartbeatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBHeartbeatTests.m; sourceTree = "<group>"; };
+		D03295B518C82A6900905DFC /* UIView+SBHeartbeat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SBHeartbeat.h"; sourceTree = "<group>"; };
+		D03295B618C82A6900905DFC /* UIView+SBHeartbeat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SBHeartbeat.m"; sourceTree = "<group>"; };
+		D03295B818C82A8400905DFC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D032957618C8291A00905DFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D03295B918C82A8400905DFC /* QuartzCore.framework in Frameworks */,
+				D032957F18C8291A00905DFC /* CoreGraphics.framework in Frameworks */,
+				D032958118C8291A00905DFC /* UIKit.framework in Frameworks */,
+				D032957D18C8291A00905DFC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D032959A18C8291A00905DFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D032959F18C8291A00905DFC /* XCTest.framework in Frameworks */,
+				D03295A118C8291A00905DFC /* UIKit.framework in Frameworks */,
+				D03295A018C8291A00905DFC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D032957018C8291900905DFC = {
+			isa = PBXGroup;
+			children = (
+				D032958218C8291A00905DFC /* SBHeartbeat */,
+				D03295A418C8291A00905DFC /* SBHeartbeatTests */,
+				D032957B18C8291A00905DFC /* Frameworks */,
+				D032957A18C8291A00905DFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D032957A18C8291A00905DFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D032957918C8291A00905DFC /* SBHeartbeat.app */,
+				D032959D18C8291A00905DFC /* SBHeartbeatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D032957B18C8291A00905DFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D03295B818C82A8400905DFC /* QuartzCore.framework */,
+				D032957C18C8291A00905DFC /* Foundation.framework */,
+				D032957E18C8291A00905DFC /* CoreGraphics.framework */,
+				D032958018C8291A00905DFC /* UIKit.framework */,
+				D032959E18C8291A00905DFC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D032958218C8291A00905DFC /* SBHeartbeat */ = {
+			isa = PBXGroup;
+			children = (
+				D03295B418C829DD00905DFC /* View */,
+				D032958B18C8291A00905DFC /* SBAppDelegate.h */,
+				D032958C18C8291A00905DFC /* SBAppDelegate.m */,
+				D032958E18C8291A00905DFC /* Main_iPhone.storyboard */,
+				D032959118C8291A00905DFC /* Main_iPad.storyboard */,
+				D032959418C8291A00905DFC /* SBViewController.h */,
+				D032959518C8291A00905DFC /* SBViewController.m */,
+				D032959718C8291A00905DFC /* Images.xcassets */,
+				D032958318C8291A00905DFC /* Supporting Files */,
+			);
+			path = SBHeartbeat;
+			sourceTree = "<group>";
+		};
+		D032958318C8291A00905DFC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D032958418C8291A00905DFC /* SBHeartbeat-Info.plist */,
+				D032958518C8291A00905DFC /* InfoPlist.strings */,
+				D032958818C8291A00905DFC /* main.m */,
+				D032958A18C8291A00905DFC /* SBHeartbeat-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D03295A418C8291A00905DFC /* SBHeartbeatTests */ = {
+			isa = PBXGroup;
+			children = (
+				D03295AA18C8291A00905DFC /* SBHeartbeatTests.m */,
+				D03295A518C8291A00905DFC /* Supporting Files */,
+			);
+			path = SBHeartbeatTests;
+			sourceTree = "<group>";
+		};
+		D03295A518C8291A00905DFC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D03295A618C8291A00905DFC /* SBHeartbeatTests-Info.plist */,
+				D03295A718C8291A00905DFC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D03295B418C829DD00905DFC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D03295B518C82A6900905DFC /* UIView+SBHeartbeat.h */,
+				D03295B618C82A6900905DFC /* UIView+SBHeartbeat.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D032957818C8291A00905DFC /* SBHeartbeat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D03295AE18C8291A00905DFC /* Build configuration list for PBXNativeTarget "SBHeartbeat" */;
+			buildPhases = (
+				D032957518C8291A00905DFC /* Sources */,
+				D032957618C8291A00905DFC /* Frameworks */,
+				D032957718C8291A00905DFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SBHeartbeat;
+			productName = SBHeartbeat;
+			productReference = D032957918C8291A00905DFC /* SBHeartbeat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D032959C18C8291A00905DFC /* SBHeartbeatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D03295B118C8291A00905DFC /* Build configuration list for PBXNativeTarget "SBHeartbeatTests" */;
+			buildPhases = (
+				D032959918C8291A00905DFC /* Sources */,
+				D032959A18C8291A00905DFC /* Frameworks */,
+				D032959B18C8291A00905DFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D03295A318C8291A00905DFC /* PBXTargetDependency */,
+			);
+			name = SBHeartbeatTests;
+			productName = SBHeartbeatTests;
+			productReference = D032959D18C8291A00905DFC /* SBHeartbeatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D032957118C8291900905DFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SB;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = 1minute2life;
+				TargetAttributes = {
+					D032959C18C8291A00905DFC = {
+						TestTargetID = D032957818C8291A00905DFC;
+					};
+				};
+			};
+			buildConfigurationList = D032957418C8291900905DFC /* Build configuration list for PBXProject "SBHeartbeat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D032957018C8291900905DFC;
+			productRefGroup = D032957A18C8291A00905DFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D032957818C8291A00905DFC /* SBHeartbeat */,
+				D032959C18C8291A00905DFC /* SBHeartbeatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D032957718C8291A00905DFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D032959318C8291A00905DFC /* Main_iPad.storyboard in Resources */,
+				D032959818C8291A00905DFC /* Images.xcassets in Resources */,
+				D032959018C8291A00905DFC /* Main_iPhone.storyboard in Resources */,
+				D032958718C8291A00905DFC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D032959B18C8291A00905DFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D03295A918C8291A00905DFC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D032957518C8291A00905DFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D03295B718C82A6900905DFC /* UIView+SBHeartbeat.m in Sources */,
+				D032958918C8291A00905DFC /* main.m in Sources */,
+				D032959618C8291A00905DFC /* SBViewController.m in Sources */,
+				D032958D18C8291A00905DFC /* SBAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D032959918C8291A00905DFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D03295AB18C8291A00905DFC /* SBHeartbeatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D03295A318C8291A00905DFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D032957818C8291A00905DFC /* SBHeartbeat */;
+			targetProxy = D03295A218C8291A00905DFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D032958518C8291A00905DFC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D032958618C8291A00905DFC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D032958E18C8291A00905DFC /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D032958F18C8291A00905DFC /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		D032959118C8291A00905DFC /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D032959218C8291A00905DFC /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		D03295A718C8291A00905DFC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D03295A818C8291A00905DFC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D03295AC18C8291A00905DFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D03295AD18C8291A00905DFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D03295AF18C8291A00905DFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SBHeartbeat/SBHeartbeat-Prefix.pch";
+				INFOPLIST_FILE = "SBHeartbeat/SBHeartbeat-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D03295B018C8291A00905DFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SBHeartbeat/SBHeartbeat-Prefix.pch";
+				INFOPLIST_FILE = "SBHeartbeat/SBHeartbeat-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D03295B218C8291A00905DFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SBHeartbeat.app/SBHeartbeat";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SBHeartbeat/SBHeartbeat-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SBHeartbeatTests/SBHeartbeatTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D03295B318C8291A00905DFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SBHeartbeat.app/SBHeartbeat";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SBHeartbeat/SBHeartbeat-Prefix.pch";
+				INFOPLIST_FILE = "SBHeartbeatTests/SBHeartbeatTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D032957418C8291900905DFC /* Build configuration list for PBXProject "SBHeartbeat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D03295AC18C8291A00905DFC /* Debug */,
+				D03295AD18C8291A00905DFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D03295AE18C8291A00905DFC /* Build configuration list for PBXNativeTarget "SBHeartbeat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D03295AF18C8291A00905DFC /* Debug */,
+				D03295B018C8291A00905DFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D03295B118C8291A00905DFC /* Build configuration list for PBXNativeTarget "SBHeartbeatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D03295B218C8291A00905DFC /* Debug */,
+				D03295B318C8291A00905DFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D032957118C8291900905DFC /* Project object */;
+}
