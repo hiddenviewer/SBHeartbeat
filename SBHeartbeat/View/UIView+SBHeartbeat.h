@@ -11,11 +11,10 @@
 typedef enum {
     kIndicatorTypeHeart = 0,
     kIndicatorTypeHeartEyes,
+    kIndicatorTypeStarEyes,
     kIndicatorTypeSmile,
-    kIndicatorTypeCynical,
+    kIndicatorTypeCry,
     kIndicatorTypeAngry,
-    kIndicatorTypeSad,
-    kIndicatorTypeWink,
 } IndicatorType ;
 
 @interface UIView (SBHeartbeat)

@@ -25,11 +25,10 @@
     NSMutableArray *icons = [[NSMutableArray alloc] initWithObjects:
                              @"heart",
                              @"heart_eyes",
+                             @"star_eyes",
                              @"smile",
-                             @"cynical",
+                             @"cry",
                              @"angry",
-                             @"sad",
-                             @"wink",
                              nil];
     
     if (indicatorType >= icons.count) {

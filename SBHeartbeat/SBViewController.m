@@ -31,7 +31,7 @@
 
 
 - (void)addControls {
-    NSArray *itemArray = [NSArray arrayWithObjects:@"heart", @"eyes", @"smile", @"cynical", @"angry", @"sad", @"wink", nil];
+    NSArray *itemArray = [NSArray arrayWithObjects:@"heart", @"eyes", @"star", @"smile", @"cry", @"angry", nil];
     
     UISegmentedControl *segmentedControl = [[UISegmentedControl alloc] initWithItems:itemArray];
     segmentedControl.frame = CGRectMake(0, 30, self.view.frame.size.width, 50);

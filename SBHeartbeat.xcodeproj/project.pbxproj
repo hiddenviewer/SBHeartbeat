@@ -16,7 +16,6 @@
 		D032959018C8291A00905DFC /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D032958E18C8291A00905DFC /* Main_iPhone.storyboard */; };
 		D032959318C8291A00905DFC /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D032959118C8291A00905DFC /* Main_iPad.storyboard */; };
 		D032959618C8291A00905DFC /* SBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D032959518C8291A00905DFC /* SBViewController.m */; };
-		D032959818C8291A00905DFC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D032959718C8291A00905DFC /* Images.xcassets */; };
 		D032959F18C8291A00905DFC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D032959E18C8291A00905DFC /* XCTest.framework */; };
 		D03295A018C8291A00905DFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D032957C18C8291A00905DFC /* Foundation.framework */; };
 		D03295A118C8291A00905DFC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D032958018C8291A00905DFC /* UIKit.framework */; };
@@ -24,6 +23,7 @@
 		D03295AB18C8291A00905DFC /* SBHeartbeatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D03295AA18C8291A00905DFC /* SBHeartbeatTests.m */; };
 		D03295B718C82A6900905DFC /* UIView+SBHeartbeat.m in Sources */ = {isa = PBXBuildFile; fileRef = D03295B618C82A6900905DFC /* UIView+SBHeartbeat.m */; };
 		D03295B918C82A8400905DFC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03295B818C82A8400905DFC /* QuartzCore.framework */; };
+		D03295BF18C859C700905DFC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D03295BE18C859C700905DFC /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +51,6 @@
 		D032959218C8291A00905DFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		D032959418C8291A00905DFC /* SBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBViewController.h; sourceTree = "<group>"; };
 		D032959518C8291A00905DFC /* SBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBViewController.m; sourceTree = "<group>"; };
-		D032959718C8291A00905DFC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D032959D18C8291A00905DFC /* SBHeartbeatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SBHeartbeatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D032959E18C8291A00905DFC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D03295A618C8291A00905DFC /* SBHeartbeatTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SBHeartbeatTests-Info.plist"; sourceTree = "<group>"; };
@@ -60,6 +59,7 @@
 		D03295B518C82A6900905DFC /* UIView+SBHeartbeat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SBHeartbeat.h"; sourceTree = "<group>"; };
 		D03295B618C82A6900905DFC /* UIView+SBHeartbeat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SBHeartbeat.m"; sourceTree = "<group>"; };
 		D03295B818C82A8400905DFC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D03295BE18C859C700905DFC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +128,7 @@
 				D032959118C8291A00905DFC /* Main_iPad.storyboard */,
 				D032959418C8291A00905DFC /* SBViewController.h */,
 				D032959518C8291A00905DFC /* SBViewController.m */,
-				D032959718C8291A00905DFC /* Images.xcassets */,
+				D03295BE18C859C700905DFC /* Images.xcassets */,
 				D032958318C8291A00905DFC /* Supporting Files */,
 			);
 			path = SBHeartbeat;
@@ -250,7 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D032959318C8291A00905DFC /* Main_iPad.storyboard in Resources */,
-				D032959818C8291A00905DFC /* Images.xcassets in Resources */,
+				D03295BF18C859C700905DFC /* Images.xcassets in Resources */,
 				D032959018C8291A00905DFC /* Main_iPhone.storyboard in Resources */,
 				D032958718C8291A00905DFC /* InfoPlist.strings in Resources */,
 			);
@@ -415,6 +415,7 @@
 				GCC_PREFIX_HEADER = "SBHeartbeat/SBHeartbeat-Prefix.pch";
 				INFOPLIST_FILE = "SBHeartbeat/SBHeartbeat-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -428,6 +429,7 @@
 				GCC_PREFIX_HEADER = "SBHeartbeat/SBHeartbeat-Prefix.pch";
 				INFOPLIST_FILE = "SBHeartbeat/SBHeartbeat-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
